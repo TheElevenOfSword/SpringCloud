@@ -50,7 +50,7 @@ CREATE TABLE oauth_code
 DROP TABLE IF EXISTS oauth_client_details;
 CREATE TABLE oauth_client_details
 (
-    client_id               VARCHAR(256) NOT NULL COMMENT '客户端ID',
+    client_id               VARCHAR(64) NOT NULL COMMENT '客户端ID',
     resource_ids            VARCHAR(256) COMMENT '资源ID集合,多个资源时用逗号(,)分隔',
     client_secret           VARCHAR(256) COMMENT '客户端密匙',
     scope                   VARCHAR(256) COMMENT '客户端申请的权限范围',
